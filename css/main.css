@@ -1,3 +1,7 @@
+/************************************import************************************/
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swapp');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Zen+Dots&display=swap');
+
 /*************************************html*************************************/
 * {
     margin: 0;
@@ -6,4 +10,79 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+}
+
+html body {
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/************************************header************************************/
+.header {
+    margin: 3%;
+    text-align: center;
+    font-family: 'Zen Dots', sans-serif;
+    font-size: 50pt;
+    color: #C1D4D9;
+}
+
+/**********************************main_index***********************************/
+.container {
+    display: flex;
+}
+
+.container section {
+    width: 35%;
+}
+
+.srocket {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.srocket img {
+    height: 450px;
+    margin-top: -8%;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    color: #C1D4D9;
+    font-family: 'Nerko One', sans-serif;
+    font-size: 30pt;
+}
+
+.btn-a {
+    padding: 8%; 
+    background-color: #1D1E40;       
+}
+
+.btn-b {
+    margin-top: 10%;
+    padding: 4%;
+    background-color: #000;    
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.message p {
+    color: #859ca6;
+    font-family: 'Nerko One', sans-serif;
+    font-size: 20pt;
+}
+
+.message img {
+    width: 50%;
 }
