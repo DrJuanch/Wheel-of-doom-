@@ -66,14 +66,14 @@ a {
 }
 
 .btn-a {
-    padding: 8%; 
-    background-color: #1D1E40;       
+    padding: 8%;
+    background-color: #1D1E40;
 }
 
 .btn-b {
     margin-top: 10%;
     padding: 4%;
-    background-color: #000;    
+    background-color: #000;
 }
 
 .message {
@@ -220,4 +220,112 @@ a {
     padding: 1%;
     text-align: center;
     background-color: #1D1E40;
+}
+
+/**********************************responsive**********************************/
+
+/* iPhone 6, 7, 8 – ------- – */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
+
+    html body {
+        height: 667px;
+        background-image: url(../img/background.jpg);
+        background-repeat: repeat;
+    }
+
+    .header {
+        margin: 12% 2% 12% 2%;
+        text-align: center;
+        font-family: 'Zen Dots', sans-serif;
+        font-size: 18pt;
+        color: #C1D4D9;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container section {
+        width: 80%;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    a {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: flex-end;
+        color: #C1D4D9;
+        font-family: 'Nerko One', sans-serif;
+        font-size: 16pt;
+    }
+
+    .btn-a {
+        padding: 12%;
+        background-color: #1D1E40;
+    }
+
+    .btn-b {
+        margin: 10% auto 80% auto;
+        padding: 6%;
+        background-color: #000;
+    }
+
+    .srocket,
+    .message {
+        display: flex;
+    }
+
+    .srocket img,
+    .message img {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .srocket {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        margin-top: -50%;
+        order: 4;
+    }
+
+    .srocket img {
+        height: 350px;
+        margin-top: -8%;
+    }
+
+    .message {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: flex-end;
+        order: 3;
+        margin-bottom: -35%;
+    }
+
+    .message p {
+        display: flex;
+        align-items: center;
+        color: #859ca6;
+        font-family: 'Nerko One', sans-serif;
+        font-size: 10pt;
+    }
+
+    .message img {
+        width: 30%;       
+    }
 }
