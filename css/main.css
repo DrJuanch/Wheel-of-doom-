@@ -21,16 +21,27 @@ html body {
 
 /************************************header************************************/
 .header {
-    margin: 3%;
+    margin: 2%;
     text-align: center;
     font-family: 'Zen Dots', sans-serif;
     font-size: 50pt;
     color: #C1D4D9;
 }
 
-.header h2 {
-    text-align: left;
+.headerList {
+    display: flex;
+    margin: 2%;
+    font-family: 'Zen Dots', sans-serif;
     font-size: 30pt;
+    color: #C1D4D9;
+    text-align: left;
+}
+
+.headerInstruction {
+    text-align: center;
+    font-family: 'Zen Dots', sans-serif;
+    font-size: 80pt;
+    color: #C1D4D9;
 }
 
 /**********************************main_index**********************************/
@@ -42,13 +53,13 @@ html body {
     width: 35%;
 }
 
-.srocket {
+.rocket {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.srocket img {
+.rocket img {
     height: 450px;
     margin-top: -8%;
 }
@@ -83,7 +94,8 @@ a {
     align-items: center;
 }
 
-.message p {
+.message p,
+h3 {
     color: #859ca6;
     font-family: 'Nerko One', sans-serif;
     font-size: 20pt;
@@ -163,7 +175,8 @@ a {
     border-radius: 10px;
 }
 
-.li-container h1 {
+.li-container h1,
+.ol-container h2 {
     font-family: 'Zen Dots', sans-serif;
     font-size: 14pt;
     font-weight: bolder;
@@ -222,6 +235,129 @@ a {
     background-color: #1D1E40;
 }
 
+/***********main_instruction**********/
+.containerInstruction {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.instruction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.ol-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto 5% auto 5%;
+    padding: 1% 5% 1% 5%;
+    background-color: #859CA6;
+    border: 4px solid #C1D4D9;
+    border-radius: 10px;
+}
+
+.ol-container ol {
+    width: 100%;
+    margin: 5% 1% 5% 1%;
+    padding: 2% 2% 2% 2%;
+    font-family: 'Nerko One', sans-serif;
+    font-size: 16pt;
+    color: #859ca6;
+}
+
+li {
+    padding-left: 0.3rem;
+    list-style-type: decimal;
+    color: #222940;
+}
+
+.ol-container h2 {
+    text-align: center;
+
+}
+
+.btn {
+    margin-top: 5%;
+}
+
+/*********************************main_wheel***********************************/
+.containerWheel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+}
+
+.containerWheel .rocket img {
+    display: flex;
+    align-items: center;
+    margin: 25% 10% 25% 10%;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.description .message {
+    width: 80%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 10%;
+    font-family: 'Nerko One', sans-serif;
+    font-size: 20pt;
+    text-align: center;
+    background-color: #000;
+    color: #C1D4D9;
+}
+
+.button-a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-d {
+    margin-top: 5%;
+    padding: 10%;
+    text-align: center;
+    background-color: #1D1E40;
+}
+
+.description .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-b {
+    width: 300px;
+    padding: 2%;
+    text-align: center;
+}
+
+.btn-e {
+    margin-right: 2%;
+    background-color: #859CA6;
+    color: #000;
+}
+
+.btn-f {
+    margin-left: 2%;
+    background-color: #222940;
+}
+
 /**********************************responsive**********************************/
 
 /* iPhone 6, 7, 8 – ------- – */
@@ -242,7 +378,7 @@ a {
         font-size: 18pt;
         color: #C1D4D9;
     }
-    
+
     .container {
         display: flex;
         flex-direction: column;
@@ -282,12 +418,12 @@ a {
         background-color: #000;
     }
 
-    .srocket,
+    .rocket,
     .message {
         display: flex;
     }
 
-    .srocket img,
+    .rocket img,
     .message img {
         display: flex;
         flex-direction: row;
@@ -295,7 +431,7 @@ a {
         align-items: center;
     }
 
-    .srocket {
+    .rocket {
         display: flex;
         flex-direction: row;
         justify-content: start;
@@ -303,7 +439,7 @@ a {
         order: 4;
     }
 
-    .srocket img {
+    .rocket img {
         height: 350px;
         margin-top: -8%;
     }
@@ -326,6 +462,6 @@ a {
     }
 
     .message img {
-        width: 30%;       
+        width: 30%;
     }
 }
