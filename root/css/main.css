@@ -1,0 +1,467 @@
+/************************************import************************************/
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swapp');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Zen+Dots&display=swap');
+
+/*************************************html*************************************/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+}
+
+html body {
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/************************************header************************************/
+.header {
+    margin: 2%;
+    text-align: center;
+    font-family: 'Zen Dots', sans-serif;
+    font-size: 50pt;
+    color: #C1D4D9;
+}
+
+.headerList {
+    display: flex;
+    margin: 2%;
+    font-family: 'Zen Dots', sans-serif;
+    font-size: 30pt;
+    color: #C1D4D9;
+    text-align: left;
+}
+
+.headerInstruction {
+    text-align: center;
+    font-family: 'Zen Dots', sans-serif;
+    font-size: 80pt;
+    color: #C1D4D9;
+}
+
+/**********************************main_index**********************************/
+.container {
+    display: flex;
+}
+
+.container section {
+    width: 35%;
+}
+
+.rocket {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rocket img {
+    height: 450px;
+    margin-top: -8%;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    color: #C1D4D9;
+    font-family: 'Nerko One', sans-serif;
+    font-size: 30pt;
+}
+
+.btn-a {
+    padding: 8%;
+    background-color: #1D1E40;
+}
+
+.btn-b {
+    margin-top: 10%;
+    padding: 4%;
+    background-color: #000;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.message p,
+h3 {
+    color: #859ca6;
+    font-family: 'Nerko One', sans-serif;
+    font-size: 20pt;
+}
+
+.message img {
+    width: 50%;
+}
+
+/**********************************main_list***********************************/
+.containerList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerList h1 {
+    font-family: 'Zen Dots', sans-serif;
+    color: #859ca6;
+}
+
+.search {
+    width: 80%;
+}
+
+.search form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.search input {
+    width: 50%;
+    margin: 2% 4% 2% -2%;
+    padding: 2%;
+    font-family: 'Zen Dots', sans-serif;
+    font-size: 14pt;
+    font-weight: bolder;
+    letter-spacing: 0.1rem;
+    text-align: left;
+    color: #1D1E40;
+    background-color: #859CA6;
+    border: 4px solid #C1D4D9;
+    border-radius: 10px;
+}
+
+::placeholder {
+    font-family: 'Zen Dots', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 0.1rem;
+    text-align: left;
+    color: #C1D4D9;
+}
+
+.btn-add {
+    margin-left: -10%;
+    padding: 0.2rem 0.7rem 0.3rem 0.7rem;
+    font-family: 'Zen Dots', sans-serif;
+    font-size: 20pt;
+    font-weight: bolder;
+    color: #C1D4D9;
+    background-color: #1D1E40;
+}
+
+.li-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: auto 25% auto 25%;
+    padding: 1% 5% 1% 5%;
+    background-color: #859CA6;
+    border: 4px solid #C1D4D9;
+    border-radius: 10px;
+}
+
+.li-container h1,
+.ol-container h2 {
+    font-family: 'Zen Dots', sans-serif;
+    font-size: 14pt;
+    font-weight: bolder;
+    letter-spacing: 0.1rem;
+    text-align: left;
+    color: #C1D4D9;
+}
+
+.li-container ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 5% 1% 5% 1%;
+    padding: 20% 20% 20% 20%;
+    font-family: 'Nerko One', sans-serif;
+    font-size: 20pt;
+    color: #859ca6;
+    background-color: #222940;
+}
+
+.li-container ul button {
+    display: flex;
+    margin-top: -10%;
+    margin-left: 80%;
+    padding: 0.2rem 0.7rem 0.3rem 0.7rem;
+    font-family: 'Zen Dots', sans-serif;
+    font-size: 14pt;
+    font-weight: bolder;
+    color: #C1D4D9;
+    background-color: #1D1E40;
+}
+
+.empty p {
+    margin: -20% 25% 9%;
+    padding: 5%;
+    font-family: 'Zen Dots', sans-serif;
+    font-size: 14pt;
+    font-weight: bolder;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    color: #C1D4D9;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-c {
+    width: 20%;
+    margin-top: 1%;
+    padding: 1%;
+    text-align: center;
+    background-color: #1D1E40;
+}
+
+/***********main_instruction**********/
+.containerInstruction {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.instruction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.ol-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto 5% auto 5%;
+    padding: 1% 5% 1% 5%;
+    background-color: #859CA6;
+    border: 4px solid #C1D4D9;
+    border-radius: 10px;
+}
+
+.ol-container ol {
+    width: 100%;
+    margin: 5% 1% 5% 1%;
+    padding: 2% 2% 2% 2%;
+    font-family: 'Nerko One', sans-serif;
+    font-size: 16pt;
+    color: #859ca6;
+}
+
+li {
+    padding-left: 0.3rem;
+    list-style-type: decimal;
+    color: #222940;
+}
+
+.ol-container h2 {
+    text-align: center;
+
+}
+
+.btn {
+    margin-top: 5%;
+}
+
+/*********************************main_wheel***********************************/
+.containerWheel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+}
+
+.containerWheel .rocket img {
+    display: flex;
+    align-items: center;
+    margin: 25% 10% 25% 10%;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.description .message {
+    width: 80%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 10%;
+    font-family: 'Nerko One', sans-serif;
+    font-size: 20pt;
+    text-align: center;
+    background-color: #000;
+    color: #C1D4D9;
+}
+
+.button-a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-d {
+    margin-top: 5%;
+    padding: 10%;
+    text-align: center;
+    background-color: #1D1E40;
+}
+
+.description .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-b {
+    width: 300px;
+    padding: 2%;
+    text-align: center;
+}
+
+.btn-e {
+    margin-right: 2%;
+    background-color: #859CA6;
+    color: #000;
+}
+
+.btn-f {
+    margin-left: 2%;
+    background-color: #222940;
+}
+
+/**********************************responsive**********************************/
+
+/* iPhone 6, 7, 8 – ------- – */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
+
+    html body {
+        height: 667px;
+        background-image: url(../img/background.jpg);
+        background-repeat: repeat;
+    }
+
+    .header {
+        margin: 12% 2% 12% 2%;
+        text-align: center;
+        font-family: 'Zen Dots', sans-serif;
+        font-size: 18pt;
+        color: #C1D4D9;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container section {
+        width: 80%;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    a {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: flex-end;
+        color: #C1D4D9;
+        font-family: 'Nerko One', sans-serif;
+        font-size: 16pt;
+    }
+
+    .btn-a {
+        padding: 12%;
+        background-color: #1D1E40;
+    }
+
+    .btn-b {
+        margin: 10% auto 80% auto;
+        padding: 6%;
+        background-color: #000;
+    }
+
+    .rocket,
+    .message {
+        display: flex;
+    }
+
+    .rocket img,
+    .message img {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rocket {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        margin-top: -50%;
+        order: 4;
+    }
+
+    .rocket img {
+        height: 350px;
+        margin-top: -8%;
+    }
+
+    .message {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: flex-end;
+        order: 3;
+        margin-bottom: -35%;
+    }
+
+    .message p {
+        display: flex;
+        align-items: center;
+        color: #859ca6;
+        font-family: 'Nerko One', sans-serif;
+        font-size: 10pt;
+    }
+
+    .message img {
+        width: 30%;
+    }
+}
